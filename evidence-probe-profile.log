@@ -1,0 +1,1096 @@
+Initialized native services in: /Users/rkpattanaik/.gradle/native
+Initialized jansi services in: /Users/rkpattanaik/.gradle/native
+Found daemon DaemonInfo{pid=19424, address=[b4a5757c-d216-48c8-ad77-91894c33ce3d port:49857, addresses:[/127.0.0.1]], state=Idle, lastBusy=1791277672908, context=DefaultDaemonContext[uid=787f3fdc-16ac-4c33-8a8b-3102c547e931,javaHome=/Users/rkpattanaik/Library/Java/JavaVirtualMachines/jdk-27.jdk/Contents/Home,javaVersion=27,javaVendor=Oracle Corporation,daemonRegistryDir=/Users/rkpattanaik/.gradle/daemon,pid=19424,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1g,-Dfile.encoding=UTF-8,-Duser.country=IN,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DaemonRequestContext{jvmCriteria=/Users/rkpattanaik/Library/Java/JavaVirtualMachines/jdk-27.jdk/Contents/Home (no Daemon JVM specified, using current Java home), daemonOpts=[-Xmx2g, -Dfile.encoding=UTF-8, -Duser.country=IN, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=787f3fdc-16ac-4c33-8a8b-3102c547e931,javaHome=/Users/rkpattanaik/Library/Java/JavaVirtualMachines/jdk-27.jdk/Contents/Home,javaVersion=27,javaVendor=Oracle Corporation,daemonRegistryDir=/Users/rkpattanaik/.gradle/daemon,pid=19424,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1g,-Dfile.encoding=UTF-8,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 19158). The daemon log file: /Users/rkpattanaik/.gradle/daemon/9.8.0/daemon-19158.out.log
+Starting 13th build in daemon [uptime: 2 hrs 50 mins 50.698 secs, performance: 98%, GC rate: 0.00/s, heap usage: 18% of 2 GiB]
+Using 2 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=true, configurationCacheDisabledReason=null, configurationCacheParallelLoad=true, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, isolatedProjectsDiagnostics=false, isolatedProjectsDangerouslyIgnoreProblems=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, vintage=false}
+Encryption key source: default Gradle keystore (pkcs12)
+Calculating task graph as no cached configuration is available for tasks: :app:assembleDebug
+Now considering [/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build-logic, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/dependency-ownership/build/hilt-probe-work, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/dependency-ownership] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Caching disabled for Kotlin DSL script compilation (Settings/TopLevel/stage1) because:
+  Build cache is disabled
+Caching disabled for Kotlin DSL script compilation (Settings/TopLevel/stage2) because:
+  Build cache is disabled
+Settings evaluated using settings file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/settings.gradle.kts'.
+Now considering [/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build-logic, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/dependency-ownership/build/hilt-probe-work, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/dependency-ownership] as hierarchies to watch
+Caching disabled for Kotlin DSL script compilation (Settings/TopLevel/stage1) because:
+  Build cache is disabled
+Caching disabled for Kotlin DSL script compilation (Settings/TopLevel/stage2) because:
+  Build cache is disabled
+Projects loaded. Root project using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build.gradle.kts'.
+Included projects: [root project 'build-investigation', project ':app', project ':build-lab', project ':cart-api', project ':cart-impl', project ':feature-cart', project ':feature-saved']
+
+> Configure project :build-logic
+Evaluating project ':build-logic' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build-logic/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.4.20']
+Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+Build cc6b0b5a-ae61-4d32-bfc3-940f69366c9d is started
+Using Kotlin Gradle Plugin gradle96 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :
+Evaluating root project 'build-investigation' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.4.1', apply: false]
+Resolved plugin [id: 'com.android.library', version: '9.4.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.4.20', apply: false]
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.60.1', apply: false]
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.12', apply: false]
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/rkpattanaik/.gradle/daemon/9.8.0 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':build-logic:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+
+> Task :build-logic:compileKotlin UP-TO-DATE
+Caching disabled for task ':build-logic:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':build-logic:compileKotlin' as it is up-to-date.
+
+> Task :build-logic:compileJava NO-SOURCE
+Skipping task ':build-logic:compileJava' as it has no source files and no previous output files.
+
+> Task :build-logic:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':build-logic:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':build-logic:pluginDescriptors' as it is up-to-date.
+
+> Task :build-logic:processResources UP-TO-DATE
+Caching disabled for task ':build-logic:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':build-logic:processResources' as it is up-to-date.
+
+> Task :build-logic:classes UP-TO-DATE
+Skipping task ':build-logic:classes' as it has no actions.
+
+> Task :build-logic:jar UP-TO-DATE
+Caching disabled for task ':build-logic:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':build-logic:jar' as it is up-to-date.
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.4.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.4.20']
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.60.1']
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.12']
+Resolved plugin [id: 'staff.build-tools']
+Tasks to be executed: [task ':build-logic:checkKotlinGradlePluginConfigurationErrors', task ':build-logic:compileKotlin', task ':build-logic:compileJava', task ':build-logic:pluginDescriptors', task ':build-logic:processResources', task ':build-logic:classes', task ':build-logic:jar']
+Tasks that were excluded: []
+Resolve mutations for :build-logic:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+:build-logic:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:compileKotlin (Thread[#1642,included builds,5,main]) started.
+:build-logic:compileKotlin (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:compileJava (Thread[#1642,included builds,5,main]) started.
+:build-logic:compileJava (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:pluginDescriptors (Thread[#1642,included builds,5,main]) started.
+:build-logic:pluginDescriptors (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:processResources (Thread[#1642,included builds,5,main]) started.
+:build-logic:processResources (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:classes (Thread[#1642,included builds,5,main]) started.
+:build-logic:classes (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :build-logic:jar (Thread[#1642,included builds,5,main]) started.
+:build-logic:jar (Thread[#1642,included builds,5,main]) started.
+Build report service is registered. Unique build id: 6235c90d-4756-4df2-8c00-fc8784971d80
+Build fa8e2432-af35-440a-a532-3fdc0b64f0ae is started
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :build-lab
+Evaluating project ':build-lab' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build-lab/build.gradle.kts'.
+Resolved plugin [id: 'staff.kotlin-library']
+Using Kotlin Gradle Plugin gradle96 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :cart-api
+Evaluating project ':cart-api' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-api/build.gradle.kts'.
+Resolved plugin [id: 'staff.kotlin-library']
+Using Kotlin Gradle Plugin gradle96 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :cart-impl
+Evaluating project ':cart-impl' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-impl/build.gradle.kts'.
+Resolved plugin [id: 'staff.kotlin-library']
+Using Kotlin Gradle Plugin gradle96 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :feature-cart
+Evaluating project ':feature-cart' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.4.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.4.20']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :feature-saved
+Evaluating project ':feature-saved' using build file '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.4.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.4.20']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+All projects evaluated.
+Task path ':app:assembleDebug' matched project ':app'
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :app
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/rkpattanaik/.gradle/daemon/9.8.0 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':cart-api:checkKotlinGradlePluginConfigurationErrors', task ':cart-api:compileKotlin', task ':cart-api:compileJava', task ':cart-impl:checkKotlinGradlePluginConfigurationErrors', task ':cart-impl:compileKotlin', task ':cart-impl:compileJava', task ':cart-impl:processResources', task ':cart-impl:classes', task ':cart-impl:jar', task ':cart-api:processResources', task ':cart-api:classes', task ':cart-api:jar', task ':app:generateDebugResources', task ':app:packageDebugResources', task ':feature-cart:preBuild', task ':feature-cart:preDebugBuild', task ':feature-cart:processDebugNavigationResources', task ':feature-saved:preBuild', task ':feature-saved:preDebugBuild', task ':feature-saved:processDebugNavigationResources', task ':app:processDebugNavigationResources', task ':app:parseDebugLocalResources', task ':app:generateDebugRFile', task ':feature-cart:generateDebugResources', task ':feature-cart:packageDebugResources', task ':feature-cart:parseDebugLocalResources', task ':feature-cart:generateDebugRFile', task ':feature-cart:compileDebugKotlin', task ':feature-cart:javaPreCompileDebug', task ':feature-cart:compileDebugJavaWithJavac', task ':feature-cart:bundleLibCompileToJarDebug', task ':feature-saved:generateDebugResources', task ':feature-saved:packageDebugResources', task ':feature-saved:parseDebugLocalResources', task ':feature-saved:generateDebugRFile', task ':feature-saved:compileDebugKotlin', task ':feature-saved:javaPreCompileDebug', task ':feature-saved:compileDebugJavaWithJavac', task ':feature-saved:bundleLibCompileToJarDebug', task ':app:kspDebugKotlin', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:generateDebugAssets', task ':app:generateDebugBuildLabel', task ':feature-cart:generateDebugAssets', task ':feature-cart:mergeDebugAssets', task ':feature-saved:generateDebugAssets', task ':feature-saved:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:generateDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':feature-cart:processDebugJavaRes', task ':feature-saved:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:desugarDebugFileDependencies', task ':app:mergeExtDexDebug', task ':feature-cart:bundleLibRuntimeToDirDebug', task ':feature-saved:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':feature-cart:bundleLibRuntimeToJarDebug', task ':feature-saved:bundleLibRuntimeToJarDebug', task ':app:hiltCollectClassesDebug', task ':app:hiltAggregateDepsDebug', task ':app:hiltJavaCompileDebug', task ':feature-cart:writeDebugAarMetadata', task ':feature-saved:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:mapDebugSourceSetPaths', task ':app:compileDebugNavigationResources', task ':app:mergeDebugResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':feature-cart:extractDeepLinksDebug', task ':feature-cart:processDebugManifest', task ':feature-saved:extractDeepLinksDebug', task ':feature-saved:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':feature-cart:mapDebugSourceSetPaths', task ':feature-cart:compileDebugLibraryResources', task ':feature-saved:mapDebugSourceSetPaths', task ':feature-saved:compileDebugLibraryResources', task ':app:processDebugResources', task ':app:transformDebugClassesWithAsm', task ':app:dexBuilderDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':feature-cart:mergeDebugJniLibFolders', task ':feature-cart:mergeDebugNativeLibs', task ':feature-cart:copyDebugJniLibsProjectOnly', task ':feature-saved:mergeDebugJniLibFolders', task ':feature-saved:mergeDebugNativeLibs', task ':feature-saved:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug']
+Tasks that were excluded: []
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':cart-api:checkKotlinGradlePluginConfigurationErrors', task ':cart-api:compileKotlin', task ':cart-api:compileJava', task ':cart-impl:checkKotlinGradlePluginConfigurationErrors', task ':cart-impl:compileKotlin', task ':cart-impl:compileJava', task ':cart-impl:processResources', task ':cart-impl:classes', task ':cart-impl:jar', task ':cart-api:processResources', task ':cart-api:classes', task ':cart-api:jar', task ':app:generateDebugResources', task ':app:packageDebugResources', task ':feature-cart:preBuild', task ':feature-cart:preDebugBuild', task ':feature-cart:processDebugNavigationResources', task ':feature-saved:preBuild', task ':feature-saved:preDebugBuild', task ':feature-saved:processDebugNavigationResources', task ':app:processDebugNavigationResources', task ':app:parseDebugLocalResources', task ':app:generateDebugRFile', task ':feature-cart:generateDebugResources', task ':feature-cart:packageDebugResources', task ':feature-cart:parseDebugLocalResources', task ':feature-cart:generateDebugRFile', task ':feature-cart:compileDebugKotlin', task ':feature-cart:javaPreCompileDebug', task ':feature-cart:compileDebugJavaWithJavac', task ':feature-cart:bundleLibCompileToJarDebug', task ':feature-saved:generateDebugResources', task ':feature-saved:packageDebugResources', task ':feature-saved:parseDebugLocalResources', task ':feature-saved:generateDebugRFile', task ':feature-saved:compileDebugKotlin', task ':feature-saved:javaPreCompileDebug', task ':feature-saved:compileDebugJavaWithJavac', task ':feature-saved:bundleLibCompileToJarDebug', task ':app:kspDebugKotlin', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:generateDebugAssets', task ':app:generateDebugBuildLabel', task ':feature-cart:generateDebugAssets', task ':feature-cart:mergeDebugAssets', task ':feature-saved:generateDebugAssets', task ':feature-saved:mergeDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:generateDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':feature-cart:processDebugJavaRes', task ':feature-saved:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:desugarDebugFileDependencies', task ':app:mergeExtDexDebug', task ':feature-cart:bundleLibRuntimeToDirDebug', task ':feature-saved:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':feature-cart:bundleLibRuntimeToJarDebug', task ':feature-saved:bundleLibRuntimeToJarDebug', task ':app:hiltCollectClassesDebug', task ':app:hiltAggregateDepsDebug', task ':app:hiltJavaCompileDebug', task ':feature-cart:writeDebugAarMetadata', task ':feature-saved:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:mapDebugSourceSetPaths', task ':app:compileDebugNavigationResources', task ':app:mergeDebugResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':feature-cart:extractDeepLinksDebug', task ':feature-cart:processDebugManifest', task ':feature-saved:extractDeepLinksDebug', task ':feature-saved:processDebugManifest', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':feature-cart:mapDebugSourceSetPaths', task ':feature-cart:compileDebugLibraryResources', task ':feature-saved:mapDebugSourceSetPaths', task ':feature-saved:compileDebugLibraryResources', task ':app:processDebugResources', task ':app:transformDebugClassesWithAsm', task ':app:dexBuilderDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':feature-cart:mergeDebugJniLibFolders', task ':feature-cart:mergeDebugNativeLibs', task ':feature-cart:copyDebugJniLibsProjectOnly', task ':feature-saved:mergeDebugJniLibFolders', task ':feature-saved:mergeDebugNativeLibs', task ':feature-saved:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug']
+Tasks that were excluded: []
+Ignoring listeners of task graph ready event, as this build (:) has already executed work.
+Resolve mutations for :app:preBuild (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :cart-api:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+:app:preBuild (Thread[#1643,Execution worker,5,main]) started.
+:cart-api:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+
+> Task :cart-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':cart-api:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:preDebugBuild (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :cart-api:compileKotlin (Thread[#1643,Execution worker,5,main]) started.
+:app:preDebugBuild (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#1642,included builds,5,main]) started.
+:cart-api:compileKotlin (Thread[#1643,Execution worker,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :cart-impl:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+:cart-impl:checkKotlinGradlePluginConfigurationErrors (Thread[#1642,included builds,5,main]) started.
+
+> Task :cart-impl:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':cart-impl:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :cart-impl:processResources (Thread[#1642,included builds,5,main]) started.
+:cart-impl:processResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :cart-impl:processResources NO-SOURCE
+Skipping task ':cart-impl:processResources' as it has no source files and no previous output files.
+
+> Task :cart-api:compileKotlin UP-TO-DATE
+Caching disabled for task ':cart-api:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':cart-api:compileKotlin' as it is up-to-date.
+work action Unknown value (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :cart-api:compileJava (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :cart-api:processResources (Thread[#1642,included builds,5,main]) started.
+:cart-api:processResources (Thread[#1642,included builds,5,main]) started.
+:cart-api:compileJava (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :cart-api:processResources NO-SOURCE
+Skipping task ':cart-api:processResources' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugResources (Thread[#1642,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :cart-api:compileJava NO-SOURCE
+Skipping task ':cart-api:compileJava' as it has no source files and no previous output files.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+work action resolve main (project ':cart-api') (Thread[#1643,Execution worker,5,main]) started.
+work action resolve main (project ':cart-api') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :cart-api:classes (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :cart-impl:compileKotlin (Thread[#1642,included builds,5,main]) started.
+:cart-api:classes (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :cart-api:classes UP-TO-DATE
+Skipping task ':cart-api:classes' as it has no actions.
+Resolve mutations for :cart-api:jar (Thread[#1643,Execution worker,5,main]) started.
+:cart-impl:compileKotlin (Thread[#1642,included builds,5,main]) started.
+:cart-api:jar (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :cart-api:jar UP-TO-DATE
+Caching disabled for task ':cart-api:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':cart-api:jar' as it is up-to-date.
+work action resolve cart-api.jar (project ':cart-api') (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :app:packageDebugResources (Thread[#1643,Execution worker,5,main]) started.
+:app:packageDebugResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+
+> Task :cart-impl:compileKotlin UP-TO-DATE
+Caching disabled for task ':cart-impl:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':cart-impl:compileKotlin' as it is up-to-date.
+Resolve mutations for :feature-cart:preBuild (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :cart-impl:compileJava (Thread[#1642,included builds,5,main]) started.
+:feature-cart:preBuild (Thread[#1643,Execution worker,5,main]) started.
+:cart-impl:compileJava (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:preBuild UP-TO-DATE
+Skipping task ':feature-cart:preBuild' as it has no actions.
+
+> Task :cart-impl:compileJava NO-SOURCE
+Skipping task ':cart-impl:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :feature-cart:preDebugBuild (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :cart-impl:classes (Thread[#1642,included builds,5,main]) started.
+:feature-cart:preDebugBuild (Thread[#1643,Execution worker,5,main]) started.
+:cart-impl:classes (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:preDebugBuild UP-TO-DATE
+Skipping task ':feature-cart:preDebugBuild' as it has no actions.
+
+> Task :cart-impl:classes UP-TO-DATE
+Skipping task ':cart-impl:classes' as it has no actions.
+Resolve mutations for :cart-impl:jar (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-cart:processDebugNavigationResources (Thread[#1643,Execution worker,5,main]) started.
+:cart-impl:jar (Thread[#1642,included builds,5,main]) started.
+:feature-cart:processDebugNavigationResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':feature-cart:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':feature-cart:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :feature-saved:preBuild (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:preBuild (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:preBuild UP-TO-DATE
+Skipping task ':feature-saved:preBuild' as it has no actions.
+Resolve mutations for :feature-saved:preDebugBuild (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:preDebugBuild (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :cart-impl:jar UP-TO-DATE
+Caching disabled for task ':cart-impl:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':cart-impl:jar' as it is up-to-date.
+
+> Task :feature-saved:preDebugBuild UP-TO-DATE
+Skipping task ':feature-saved:preDebugBuild' as it has no actions.
+work action resolve cart-impl.jar (project ':cart-impl') (Thread[#1642,included builds,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-saved:processDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+:feature-saved:processDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+work action resolve debug (project ':feature-cart') (Thread[#1643,Execution worker,5,main]) started.
+work action Unknown value (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-cart:generateDebugResources (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:generateDebugResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':feature-saved:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':feature-saved:processDebugNavigationResources' as it is up-to-date.
+work action resolve debug (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:processDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+:app:processDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:generateDebugResources UP-TO-DATE
+Caching disabled for task ':feature-cart:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':feature-cart:generateDebugResources' as it is up-to-date.
+Resolve mutations for :feature-cart:packageDebugResources (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:packageDebugResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:packageDebugResources UP-TO-DATE
+Caching disabled for task ':feature-cart:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':feature-cart:packageDebugResources' as it is up-to-date.
+Resolve mutations for :feature-cart:parseDebugLocalResources (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:parseDebugLocalResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':feature-cart:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':feature-cart:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :feature-cart:generateDebugRFile (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:generateDebugRFile (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':feature-cart:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':feature-cart:generateDebugRFile' as it is up-to-date.
+:app:parseDebugLocalResources (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-cart:compileDebugKotlin (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:compileDebugKotlin (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:generateDebugRFile (Thread[#1642,included builds,5,main]) started.
+:app:generateDebugRFile (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':app:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :feature-cart:javaPreCompileDebug (Thread[#1642,included builds,5,main]) started.
+:feature-cart:javaPreCompileDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':feature-cart:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':feature-cart:javaPreCompileDebug' as it is up-to-date.
+work action Unknown value (Thread[#1642,included builds,5,main]) started.
+IdentityTransform (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-saved:generateDebugResources (Thread[#1642,included builds,5,main]) started.
+:feature-saved:generateDebugResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:generateDebugResources UP-TO-DATE
+Caching disabled for task ':feature-saved:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':feature-saved:generateDebugResources' as it is up-to-date.
+Resolve mutations for :feature-saved:packageDebugResources (Thread[#1642,included builds,5,main]) started.
+:feature-saved:packageDebugResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:packageDebugResources UP-TO-DATE
+Caching disabled for task ':feature-saved:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':feature-saved:packageDebugResources' as it is up-to-date.
+Resolve mutations for :feature-saved:parseDebugLocalResources (Thread[#1642,included builds,5,main]) started.
+:feature-saved:parseDebugLocalResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':feature-saved:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':feature-saved:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :feature-saved:generateDebugRFile (Thread[#1642,included builds,5,main]) started.
+:feature-saved:generateDebugRFile (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:generateDebugRFile UP-TO-DATE
+Caching disabled for task ':feature-saved:generateDebugRFile' because:
+  Build cache is disabled
+Skipping task ':feature-saved:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :feature-saved:compileDebugKotlin (Thread[#1642,included builds,5,main]) started.
+:feature-saved:compileDebugKotlin (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:compileDebugKotlin UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/java', not found
+Caching disabled for task ':feature-cart:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':feature-cart:compileDebugKotlin' as it is up-to-date.
+
+> Task :feature-saved:compileDebugKotlin UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/java', not found
+Caching disabled for task ':feature-saved:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':feature-saved:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :feature-cart:compileDebugJavaWithJavac (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-saved:javaPreCompileDebug (Thread[#1642,included builds,5,main]) started.
+:feature-saved:javaPreCompileDebug (Thread[#1642,included builds,5,main]) started.
+:feature-cart:compileDebugJavaWithJavac (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':feature-saved:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':feature-saved:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :feature-saved:compileDebugJavaWithJavac (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:compileDebugJavaWithJavac NO-SOURCE
+Skipping task ':feature-cart:compileDebugJavaWithJavac' as it has no source files and no previous output files.
+:feature-saved:compileDebugJavaWithJavac (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-cart:bundleLibCompileToJarDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:bundleLibCompileToJarDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:compileDebugJavaWithJavac NO-SOURCE
+Skipping task ':feature-saved:compileDebugJavaWithJavac' as it has no source files and no previous output files.
+Resolve mutations for :feature-saved:bundleLibCompileToJarDebug (Thread[#1642,included builds,5,main]) started.
+:feature-saved:bundleLibCompileToJarDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':feature-cart:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-cart:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project ':feature-cart') (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':feature-saved:bundleLibCompileToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-saved:bundleLibCompileToJarDebug' as it is up-to-date.
+Resolve mutations for :app:javaPreCompileDebug (Thread[#1643,Execution worker,5,main]) started.
+work action resolve classes.jar (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:kspDebugKotlin (Thread[#1642,included builds,5,main]) started.
+:app:javaPreCompileDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:kspDebugKotlin (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:javaPreCompileDebug UP-TO-DATE
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Skipping task ':app:javaPreCompileDebug' as it is up-to-date.
+Resolve mutations for :app:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:app:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :app:generateDebugBuildLabel (Thread[#1643,Execution worker,5,main]) started.
+:app:generateDebugBuildLabel (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:generateDebugBuildLabel UP-TO-DATE
+Caching disabled for task ':app:generateDebugBuildLabel' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugBuildLabel' as it is up-to-date.
+Resolve mutations for :feature-cart:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:generateDebugAssets UP-TO-DATE
+Skipping task ':feature-cart:generateDebugAssets' as it has no actions.
+Resolve mutations for :feature-cart:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':feature-cart:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-cart:mergeDebugAssets' as it is up-to-date.
+Resolve mutations for :feature-saved:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:generateDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:generateDebugAssets UP-TO-DATE
+Skipping task ':feature-saved:generateDebugAssets' as it has no actions.
+Resolve mutations for :feature-saved:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':feature-saved:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-saved:mergeDebugAssets' as it is up-to-date.
+work action resolve mergeDebugAssets (project ':feature-cart') (Thread[#1643,Execution worker,5,main]) started.
+work action resolve mergeDebugAssets (project ':feature-saved') (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:app:mergeDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:mergeDebugAssets UP-TO-DATE
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugAssets' as it is up-to-date.
+Resolve mutations for :app:compressDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+:app:compressDebugAssets (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:compressDebugAssets UP-TO-DATE
+Caching disabled for task ':app:compressDebugAssets' because:
+  Build cache is disabled
+Skipping task ':app:compressDebugAssets' as it is up-to-date.
+Resolve mutations for :app:generateDebugGlobalSynthetics (Thread[#1643,Execution worker,5,main]) started.
+:app:generateDebugGlobalSynthetics (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:generateDebugGlobalSynthetics UP-TO-DATE
+Caching disabled for task ':app:generateDebugGlobalSynthetics' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugGlobalSynthetics' as it is up-to-date.
+work action Unknown value (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-cart:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:processDebugJavaRes UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/main/resources', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/src/debug/resources', not found
+Caching disabled for task ':feature-cart:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-cart:processDebugJavaRes' as it is up-to-date.
+Resolve mutations for :feature-saved:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:processDebugJavaRes UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/main/resources', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/src/debug/resources', not found
+Caching disabled for task ':feature-saved:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-saved:processDebugJavaRes' as it is up-to-date.
+work action resolve out (project ':feature-saved') (Thread[#1643,Execution worker,5,main]) started.
+work action resolve out (project ':feature-cart') (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :app:checkDebugDuplicateClasses (Thread[#1643,Execution worker,5,main]) started.
+:app:checkDebugDuplicateClasses (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+Caching disabled for task ':app:checkDebugDuplicateClasses' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugDuplicateClasses' as it is up-to-date.
+Resolve mutations for :app:desugarDebugFileDependencies (Thread[#1643,Execution worker,5,main]) started.
+:app:desugarDebugFileDependencies (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+Caching disabled for task ':app:desugarDebugFileDependencies' because:
+  Build cache is disabled
+Skipping task ':app:desugarDebugFileDependencies' as it is up-to-date.
+Resolve mutations for :app:mergeExtDexDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:mergeExtDexDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:kspDebugKotlin UP-TO-DATE
+Caching disabled for task ':app:kspDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':app:kspDebugKotlin' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[#1642,included builds,5,main]) started.
+:app:compileDebugKotlin (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mergeExtDexDebug UP-TO-DATE
+Caching disabled for task ':app:mergeExtDexDebug' because:
+  Build cache is disabled
+Skipping task ':app:mergeExtDexDebug' as it is up-to-date.
+work action Unknown value (Thread[#1643,Execution worker,5,main]) started.
+work action resolve main (project ':cart-impl') (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+work action Unknown value (Thread[#1643,Execution worker,5,main]) started.
+DexingNoClasspathTransform (Thread[#1643,Execution worker,5,main]) started.
+
+> Transform main (project ':cart-impl') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/.gradle/caches/9.8.0/transforms/be2925e12b36eaaa2f265f4568ef2f46/transformed/empty because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/.gradle/caches/9.8.0/transforms/be2925e12b36eaaa2f265f4568ef2f46/transformed/empty as it is up-to-date.
+work action resolve main (project ':cart-impl') (Thread[#1643,Execution worker,5,main]) started.
+IdentityTransform (Thread[#1643,Execution worker,5,main]) started.
+DexingNoClasspathTransform (Thread[#1643,Execution worker,5,main]) started.
+
+> Transform main (project ':cart-impl') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-impl/build/classes/kotlin/main because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-impl/build/classes/kotlin/main as it is up-to-date.
+Resolve mutations for :feature-cart:bundleLibRuntimeToDirDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:bundleLibRuntimeToDirDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:bundleLibRuntimeToDirDebug UP-TO-DATE
+Caching disabled for task ':feature-cart:bundleLibRuntimeToDirDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-cart:bundleLibRuntimeToDirDebug' as it is up-to-date.
+work action Unknown value (Thread[#1643,Execution worker,5,main]) started.
+work action resolve bundleLibRuntimeToDirDebug (project ':feature-cart') (Thread[#1643,Execution worker,5,main]) started.
+ClassesDirToClassesTransform (Thread[#1643,Execution worker,5,main]) started.
+DexingNoClasspathTransform (Thread[#1643,Execution worker,5,main]) started.
+
+> Transform bundleLibRuntimeToDirDebug (project ':feature-cart') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-cart/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+Resolve mutations for :feature-saved:bundleLibRuntimeToDirDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:bundleLibRuntimeToDirDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:bundleLibRuntimeToDirDebug UP-TO-DATE
+Caching disabled for task ':feature-saved:bundleLibRuntimeToDirDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-saved:bundleLibRuntimeToDirDebug' as it is up-to-date.
+work action resolve bundleLibRuntimeToDirDebug (project ':feature-saved') (Thread[#1643,Execution worker,5,main]) started.
+ClassesDirToClassesTransform (Thread[#1643,Execution worker,5,main]) started.
+DexingNoClasspathTransform (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:compileDebugKotlin UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/kotlin', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/java', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/java', not found
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':app:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :app:compileDebugJavaWithJavac (Thread[#1642,included builds,5,main]) started.
+:app:compileDebugJavaWithJavac (Thread[#1642,included builds,5,main]) started.
+
+> Transform bundleLibRuntimeToDirDebug (project ':feature-saved') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/feature-saved/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug as it is up-to-date.
+Resolve mutations for :app:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+:app:processDebugJavaRes (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:processDebugJavaRes UP-TO-DATE
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/main/resources', not found
+file or directory '/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/app/src/debug/resources', not found
+Caching disabled for task ':app:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:processDebugJavaRes' as it is up-to-date.
+Resolve mutations for :app:mergeDebugJavaResource (Thread[#1643,Execution worker,5,main]) started.
+:app:mergeDebugJavaResource (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':app:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :app:compileDebugJavaWithJavac
+No compile result for :app:compileDebugJavaWithJavac
+No compile result for :app:compileDebugJavaWithJavac
+No compile result for :app:compileDebugJavaWithJavac
+No compile result for :app:compileDebugJavaWithJavac
+work action resolve main (project ':cart-api') (Thread[#1642,included builds,5,main]) started.
+IdentityTransform (Thread[#1642,included builds,5,main]) started.
+DexingNoClasspathTransform (Thread[#1642,included builds,5,main]) started.
+
+> Transform main (project ':cart-api') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/.gradle/caches/9.8.0/transforms/3e93e32f1f25557e04cce4e908469c4d/transformed/empty because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/.gradle/caches/9.8.0/transforms/3e93e32f1f25557e04cce4e908469c4d/transformed/empty as it is up-to-date.
+work action resolve main (project ':cart-api') (Thread[#1642,included builds,5,main]) started.
+IdentityTransform (Thread[#1642,included builds,5,main]) started.
+DexingNoClasspathTransform (Thread[#1642,included builds,5,main]) started.
+
+> Transform main (project ':cart-api') with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-api/build/classes/kotlin/main because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/cart-api/build/classes/kotlin/main as it is up-to-date.
+Resolve mutations for :app:mergeLibDexDebug (Thread[#1642,included builds,5,main]) started.
+:app:mergeLibDexDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mergeLibDexDebug UP-TO-DATE
+Caching disabled for task ':app:mergeLibDexDebug' because:
+  Build cache is disabled
+Skipping task ':app:mergeLibDexDebug' as it is up-to-date.
+IdentityTransform (Thread[#1642,included builds,5,main]) started.
+IdentityTransform (Thread[#1642,included builds,5,main]) started.
+work action Unknown value (Thread[#1642,included builds,5,main]) started.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+Caching disabled for task ':app:mergeDebugJavaResource' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mergeDebugJavaResource' as it is up-to-date.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+AggregatedPackagesTransform (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-cart:bundleLibRuntimeToJarDebug (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-saved:bundleLibRuntimeToJarDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:bundleLibRuntimeToJarDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:bundleLibRuntimeToJarDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:bundleLibRuntimeToJarDebug UP-TO-DATE
+Caching disabled for task ':feature-cart:bundleLibRuntimeToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-cart:bundleLibRuntimeToJarDebug' as it is up-to-date.
+
+> Task :feature-saved:bundleLibRuntimeToJarDebug UP-TO-DATE
+Caching disabled for task ':feature-saved:bundleLibRuntimeToJarDebug' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-saved:bundleLibRuntimeToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve classes.jar (project ':feature-saved') (Thread[#1643,Execution worker,5,main]) started.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+AggregatedPackagesTransform (Thread[#1643,Execution worker,5,main]) started.
+AggregatedPackagesTransform (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:hiltCollectClassesDebug (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-cart:writeDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+:app:hiltCollectClassesDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:writeDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:hiltCollectClassesDebug UP-TO-DATE
+Skipping task ':app:hiltCollectClassesDebug' as it has no actions.
+Resolve mutations for :app:hiltAggregateDepsDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:hiltAggregateDepsDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':feature-cart:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-cart:writeDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :feature-saved:writeDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+:feature-saved:writeDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':feature-saved:writeDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-saved:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action resolve aar-metadata.properties (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:hiltAggregateDepsDebug UP-TO-DATE
+Caching disabled for task ':app:hiltAggregateDepsDebug' because:
+  Build cache is disabled
+Skipping task ':app:hiltAggregateDepsDebug' as it is up-to-date.
+Resolve mutations for :app:hiltJavaCompileDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:hiltJavaCompileDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:compileDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+:app:compileDebugNavigationResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:compileDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:compileDebugNavigationResources' as it is up-to-date.
+work action resolve packageDebugResources (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action resolve packageDebugResources (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugResources (Thread[#1642,included builds,5,main]) started.
+:app:mergeDebugResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:hiltJavaCompileDebug UP-TO-DATE
+Caching disabled for task ':app:hiltJavaCompileDebug' because:
+  Build cache is disabled
+Skipping task ':app:hiltJavaCompileDebug' as it is up-to-date.
+No compile result for :app:hiltJavaCompileDebug
+No compile result for :app:hiltJavaCompileDebug
+No compile result for :app:hiltJavaCompileDebug
+No compile result for :app:hiltJavaCompileDebug
+No compile result for :app:hiltJavaCompileDebug
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#1643,Execution worker,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :feature-cart:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':feature-cart:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':feature-cart:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :feature-cart:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:processDebugManifest UP-TO-DATE
+Caching disabled for task ':feature-cart:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':feature-cart:processDebugManifest' as it is up-to-date.
+Resolve mutations for :feature-saved:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:extractDeepLinksDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-saved:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':feature-saved:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':feature-saved:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :feature-saved:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+:feature-saved:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+work action resolve navigation.json (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve navigation.json (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action resolve AndroidManifest.xml (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :feature-cart:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+:feature-cart:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:processDebugManifest UP-TO-DATE
+Caching disabled for task ':feature-saved:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':feature-saved:processDebugManifest' as it is up-to-date.
+
+> Task :feature-cart:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':feature-cart:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-cart:mapDebugSourceSetPaths' as it is up-to-date.
+work action resolve AndroidManifest.xml (project ':feature-saved') (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :feature-cart:compileDebugLibraryResources (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:processDebugMainManifest (Thread[#1643,Execution worker,5,main]) started.
+:feature-cart:compileDebugLibraryResources (Thread[#1642,included builds,5,main]) started.
+:app:processDebugMainManifest (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :feature-cart:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':feature-cart:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':feature-cart:compileDebugLibraryResources' as it is up-to-date.
+Resolve mutations for :feature-saved:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+:feature-saved:mapDebugSourceSetPaths (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':feature-saved:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-saved:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :feature-saved:compileDebugLibraryResources (Thread[#1642,included builds,5,main]) started.
+:feature-saved:compileDebugLibraryResources (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:compileDebugLibraryResources UP-TO-DATE
+Caching disabled for task ':feature-saved:compileDebugLibraryResources' because:
+  Build cache is disabled
+Skipping task ':feature-saved:compileDebugLibraryResources' as it is up-to-date.
+work action resolve out (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve package-aware-r.txt (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action resolve file-map.txt (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve package-aware-r.txt (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve out (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action resolve file-map.txt (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+work action Unknown value (Thread[#1642,included builds,5,main]) started.
+ExtractJniTransform (Thread[#1642,included builds,5,main]) started.
+ExtractJniTransform (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+:app:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+Caching disabled for task ':app:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':app:mergeDebugJniLibFolders' as it is up-to-date.
+Resolve mutations for :feature-cart:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+:feature-cart:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:mergeDebugJniLibFolders UP-TO-DATE
+Caching disabled for task ':feature-cart:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-cart:mergeDebugJniLibFolders' as it is up-to-date.
+Resolve mutations for :feature-cart:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+:feature-cart:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:mergeDebugNativeLibs NO-SOURCE
+Skipping task ':feature-cart:mergeDebugNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :feature-cart:copyDebugJniLibsProjectOnly (Thread[#1642,included builds,5,main]) started.
+:feature-cart:copyDebugJniLibsProjectOnly (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-cart:copyDebugJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':feature-cart:copyDebugJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-cart:copyDebugJniLibsProjectOnly' as it is up-to-date.
+Resolve mutations for :feature-saved:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+:feature-saved:mergeDebugJniLibFolders (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:mergeDebugJniLibFolders UP-TO-DATE
+Caching disabled for task ':feature-saved:mergeDebugJniLibFolders' because:
+  Build cache is disabled
+  Simple merging task
+Skipping task ':feature-saved:mergeDebugJniLibFolders' as it is up-to-date.
+Resolve mutations for :feature-saved:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+:feature-saved:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:mergeDebugNativeLibs NO-SOURCE
+Skipping task ':feature-saved:mergeDebugNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :feature-saved:copyDebugJniLibsProjectOnly (Thread[#1642,included builds,5,main]) started.
+:feature-saved:copyDebugJniLibsProjectOnly (Thread[#1642,included builds,5,main]) started.
+
+> Task :feature-saved:copyDebugJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':feature-saved:copyDebugJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':feature-saved:copyDebugJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project ':feature-cart') (Thread[#1642,included builds,5,main]) started.
+work action resolve jni (project ':feature-saved') (Thread[#1642,included builds,5,main]) started.
+Resolve mutations for :app:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+:app:mergeDebugNativeLibs (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+:app:processDebugManifest (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#1643,Execution worker,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[#1643,Execution worker,5,main]) started.
+:app:processDebugResources (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+Caching disabled for task ':app:mergeDebugNativeLibs' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mergeDebugNativeLibs' as it is up-to-date.
+Resolve mutations for :app:stripDebugDebugSymbols (Thread[#1642,included builds,5,main]) started.
+:app:stripDebugDebugSymbols (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+Caching disabled for task ':app:stripDebugDebugSymbols' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:stripDebugDebugSymbols' as it is up-to-date.
+Resolve mutations for :app:validateSigningDebug (Thread[#1642,included builds,5,main]) started.
+:app:validateSigningDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:validateSigningDebug UP-TO-DATE
+Caching disabled for task ':app:validateSigningDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:validateSigningDebug' as it is up-to-date.
+Resolve mutations for :app:writeDebugAppMetadata (Thread[#1642,included builds,5,main]) started.
+:app:writeDebugAppMetadata (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+Caching disabled for task ':app:writeDebugAppMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:writeDebugAppMetadata' as it is up-to-date.
+Resolve mutations for :app:writeDebugSigningConfigVersions (Thread[#1642,included builds,5,main]) started.
+:app:writeDebugSigningConfigVersions (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+Caching disabled for task ':app:writeDebugSigningConfigVersions' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:writeDebugSigningConfigVersions' as it is up-to-date.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:transformDebugClassesWithAsm (Thread[#1643,Execution worker,5,main]) started.
+:app:transformDebugClassesWithAsm (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:transformDebugClassesWithAsm UP-TO-DATE
+Caching disabled for task ':app:transformDebugClassesWithAsm' because:
+  Build cache is disabled
+Skipping task ':app:transformDebugClassesWithAsm' as it is up-to-date.
+Resolve mutations for :app:dexBuilderDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:dexBuilderDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:dexBuilderDebug UP-TO-DATE
+Caching disabled for task ':app:dexBuilderDebug' because:
+  Build cache is disabled
+Skipping task ':app:dexBuilderDebug' as it is up-to-date.
+Resolve mutations for :app:mergeProjectDexDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:mergeProjectDexDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+Caching disabled for task ':app:mergeProjectDexDebug' because:
+  Build cache is disabled
+Skipping task ':app:mergeProjectDexDebug' as it is up-to-date.
+Resolve mutations for :app:packageDebug (Thread[#1643,Execution worker,5,main]) started.
+:app:packageDebug (Thread[#1643,Execution worker,5,main]) started.
+
+> Task :app:packageDebug UP-TO-DATE
+Caching disabled for task ':app:packageDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:packageDebug' as it is up-to-date.
+Resolve mutations for :app:createDebugApkListingFileRedirect (Thread[#1643,Execution worker,5,main]) started.
+Resolve mutations for :app:assembleDebug (Thread[#1642,included builds,5,main]) started.
+:app:createDebugApkListingFileRedirect (Thread[#1643,Execution worker,5,main]) started.
+:app:assembleDebug (Thread[#1642,included builds,5,main]) started.
+
+> Task :app:assembleDebug UP-TO-DATE
+Skipping task ':app:assembleDebug' as it has no actions.
+
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+Caching disabled for task ':app:createDebugApkListingFileRedirect' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugApkListingFileRedirect' as it is up-to-date.
+Build cc6b0b5a-ae61-4d32-bfc3-940f69366c9d is closed
+Build fa8e2432-af35-440a-a532-3fdc0b64f0ae is closed
+Kotlin build report is written to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/kotlin-build/build-investigation-build-2026-10-06-17-27-41-0.txt
+Kotlin build report is written to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/kotlin-build/build-investigation-build-2026-10-06-17-27-41-0.json
+
+See the complete report at file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/configuration-cache/ezcfgttgqioi2gxgf9uwwhmqy/ecmyf0pecgauqcwwisfdccrbl/configuration-cache-report.html
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1s
+88 actionable tasks: 88 up-to-date
+Watched directory hierarchies: [/Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation, /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/dependency-ownership]
+Configuration cache entry stored.
+
+See the profiling report at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/profile/profile-2026-10-06-17-27-40.html
+A fine-grained performance profile is available: use the --scan option.

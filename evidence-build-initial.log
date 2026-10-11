@@ -1,0 +1,148 @@
+Calculating task graph as no cached configuration is available for tasks: :app:assembleDebug :cart-impl:test :build-lab:test
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:pluginDescriptors
+> Task :build-logic:processResources
+> Task :build-logic:compileKotlin
+> Task :build-logic:compileJava NO-SOURCE
+> Task :build-logic:classes
+> Task :build-logic:jar
+> Task :app:preBuild UP-TO-DATE
+> Task :cart-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :cart-impl:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :cart-impl:processResources NO-SOURCE
+> Task :cart-api:processResources NO-SOURCE
+> Task :app:generateDebugResources FROM-CACHE
+> Task :app:packageDebugResources
+> Task :feature-cart:preBuild UP-TO-DATE
+> Task :feature-cart:preDebugBuild UP-TO-DATE
+> Task :feature-cart:processDebugNavigationResources FROM-CACHE
+> Task :feature-saved:preBuild UP-TO-DATE
+> Task :feature-saved:preDebugBuild UP-TO-DATE
+> Task :feature-saved:processDebugNavigationResources FROM-CACHE
+> Task :app:processDebugNavigationResources
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:generateDebugRFile
+> Task :feature-cart:generateDebugResources FROM-CACHE
+> Task :feature-cart:packageDebugResources
+> Task :feature-cart:parseDebugLocalResources FROM-CACHE
+> Task :feature-cart:generateDebugRFile
+> Task :feature-cart:javaPreCompileDebug FROM-CACHE
+> Task :feature-saved:generateDebugResources FROM-CACHE
+> Task :feature-saved:packageDebugResources
+> Task :feature-saved:parseDebugLocalResources FROM-CACHE
+> Task :feature-saved:generateDebugRFile
+> Task :feature-saved:javaPreCompileDebug FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:generateDebugBuildLabel
+> Task :feature-cart:generateDebugAssets UP-TO-DATE
+> Task :feature-cart:mergeDebugAssets
+> Task :feature-saved:generateDebugAssets UP-TO-DATE
+> Task :feature-saved:mergeDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:generateDebugGlobalSynthetics FROM-CACHE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :feature-cart:writeDebugAarMetadata
+> Task :feature-saved:writeDebugAarMetadata
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:compileDebugNavigationResources FROM-CACHE
+> Task :cart-api:compileKotlin
+> Task :cart-api:compileJava NO-SOURCE
+> Task :app:mergeDebugResources
+> Task :cart-api:classes UP-TO-DATE
+> Task :cart-api:jar
+> Task :cart-impl:compileKotlin
+> Task :cart-impl:compileJava NO-SOURCE
+> Task :cart-impl:classes UP-TO-DATE
+> Task :cart-impl:jar
+> Task :feature-cart:compileDebugKotlin
+> Task :feature-saved:compileDebugKotlin
+> Task :feature-saved:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature-cart:compileDebugJavaWithJavac NO-SOURCE
+> Task :feature-cart:bundleLibCompileToJarDebug
+> Task :feature-saved:bundleLibCompileToJarDebug
+> Task :feature-cart:processDebugJavaRes
+> Task :feature-saved:processDebugJavaRes
+> Task :feature-cart:bundleLibRuntimeToDirDebug
+> Task :feature-saved:bundleLibRuntimeToDirDebug
+> Task :app:mergeLibDexDebug
+> Task :feature-cart:bundleLibRuntimeToJarDebug
+> Task :feature-saved:bundleLibRuntimeToJarDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :feature-cart:extractDeepLinksDebug FROM-CACHE
+> Task :feature-cart:processDebugManifest
+> Task :feature-saved:extractDeepLinksDebug FROM-CACHE
+> Task :feature-saved:processDebugManifest
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :feature-cart:mapDebugSourceSetPaths
+> Task :feature-cart:compileDebugLibraryResources FROM-CACHE
+> Task :feature-saved:mapDebugSourceSetPaths
+> Task :feature-saved:compileDebugLibraryResources FROM-CACHE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJniLibFolders
+> Task :feature-cart:mergeDebugJniLibFolders
+> Task :feature-cart:mergeDebugNativeLibs NO-SOURCE
+> Task :feature-cart:copyDebugJniLibsProjectOnly
+> Task :feature-saved:mergeDebugJniLibFolders
+> Task :feature-saved:mergeDebugNativeLibs NO-SOURCE
+> Task :feature-saved:copyDebugJniLibsProjectOnly
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :cart-impl:compileTestKotlin
+> Task :cart-impl:compileTestJava NO-SOURCE
+> Task :cart-impl:processTestResources NO-SOURCE
+> Task :cart-impl:testClasses UP-TO-DATE
+> Task :app:kspDebugKotlin
+> Task :cart-impl:test
+> Task :build-lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-lab:compileKotlin
+> Task :build-lab:compileJava NO-SOURCE
+> Task :build-lab:processResources NO-SOURCE
+> Task :build-lab:classes UP-TO-DATE
+> Task :build-lab:jar
+> Task :build-lab:compileTestKotlin NO-SOURCE
+> Task :build-lab:compileTestJava NO-SOURCE
+> Task :build-lab:processTestResources NO-SOURCE
+> Task :build-lab:testClasses UP-TO-DATE
+> Task :build-lab:test NO-SOURCE
+> Task :app:compileDebugKotlin
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugJavaResource
+> Task :app:compileDebugJavaWithJavac
+> Task :app:hiltCollectClassesDebug
+> Task :app:hiltAggregateDepsDebug
+> Task :app:hiltJavaCompileDebug
+> Task :app:transformDebugClassesWithAsm
+> Task :app:dexBuilderDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:createDebugApkListingFileRedirect
+Kotlin build report is written to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/kotlin-build/build-investigation-build-2026-10-06-17-24-18-0.txt
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 22s
+92 actionable tasks: 73 executed, 19 from cache
+Configuration cache entry stored.

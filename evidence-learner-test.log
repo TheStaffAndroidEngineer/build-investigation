@@ -1,0 +1,73 @@
+Calculating task graph as no cached configuration is available for tasks: :build-lab:exerciseTest
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:compileKotlin UP-TO-DATE
+> Task :build-logic:compileJava NO-SOURCE
+> Task :build-logic:pluginDescriptors UP-TO-DATE
+> Task :build-logic:processResources UP-TO-DATE
+> Task :build-logic:classes UP-TO-DATE
+> Task :build-logic:jar UP-TO-DATE
+> Task :build-lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-lab:processResources NO-SOURCE
+> Task :build-lab:processTestResources NO-SOURCE
+> Task :build-lab:compileKotlin UP-TO-DATE
+> Task :build-lab:compileJava NO-SOURCE
+> Task :build-lab:classes UP-TO-DATE
+> Task :build-lab:jar UP-TO-DATE
+> Task :build-lab:compileTestKotlin UP-TO-DATE
+> Task :build-lab:compileTestJava NO-SOURCE
+> Task :build-lab:testClasses UP-TO-DATE
+
+> Task :build-lab:exerciseTest FAILED
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "report bundle branches overlap" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:24
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "independent roots overlap" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:24
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "equal root durations use complete lexical path" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:24
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "equal predecessors use complete lexical path" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:24
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "shorter equal-root prefix wins" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:24
+
+LearnerCriticalPathTest > producesExactSelectedTimingsAndPath(String, List, Set, CriticalPathPlan) > "parallel durations must not be summed into overflow" FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:23
+        Caused by: java.lang.ArithmeticException at CriticalPathTest.kt:203
+
+LearnerCriticalPathTest > declarationOrderDoesNotChooseTheTiedPath() FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:104
+
+LearnerCriticalPathTest > changingCriticalCostCanChangeTheBound() FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:93
+
+LearnerCriticalPathTest > improvingNoncriticalBranchDoesNotChangeDependencyBound() FAILED
+    org.opentest4j.AssertionFailedError at CriticalPathTest.kt:82
+
+31 tests completed, 9 failed
+Kotlin build report is written to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/kotlin-build/build-investigation-build-2026-10-06-17-49-10-0.txt
+Kotlin build report is written to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/kotlin-build/build-investigation-build-2026-10-06-17-49-10-0.json
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':build-lab:exerciseTest'.
+> There were failing tests. See the report at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/build-investigation/build-lab/build/reports/tests/exerciseTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1s
+8 actionable tasks: 1 executed, 7 up-to-date
+Configuration cache entry stored.
